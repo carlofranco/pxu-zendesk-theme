@@ -1,0 +1,308 @@
+<div class="container-divider"></div>
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+    {{search submit=false}}
+  </nav>
+</div>
+
+  <div class="contact-page container clear">
+    		<div class="form-section">
+          <div class="form-notes">
+            <h3>We care about your shop and want you to create a successful online business.</h3>
+            <p>
+            Support is available Monday to Friday from 8 a.m. to 6 p.m. PST, with limited support on the weekends. We are happy to assist with issues related to built-in features and functionality in our themes or apps, as well as provide support and recommendations for any technical issues encountered.
+            </p>
+
+            <p>
+         We do not offer support for integrating or troubleshooting third-party apps and custom code, nor do we offer support for customizations that occur after the purchase of one of our themes (including adding new features, altering the design of the theme, implementing any third-party code or apps, or troubleshooting previous customizations after updating the theme).
+            </p>
+            
+          </div>
+        </div>
+          <ul class="tabs">
+            <li><a class="active" href="#tab1">Contact Pixel Union support</a></li>
+            <li><a href="#tab2">Contact Storetasker for a quote.</a></li>
+          </ul>
+            <ul class="tabs-content">
+              <li class="active" id="tab1">
+                  <h1>
+                    {{#if follow_up}}
+                      <span class="follow-up-hint">
+                        {{follow_up}}
+                      </span>
+                    {{/if}}
+                  </h1>
+
+                  <div class="form-section">
+                    <div class="form">
+                      {{request_form}}
+                    </div>
+                  </div>
+              </li>
+              <li id="tab2">
+                  <div class="storetasker-logo" style="max-width: 600px; margin-left: auto; margin-right: auto">
+                    		<img src="{{asset 'full_logo-1.png'}}" alt="Storetasker" style="max-width: 250px;">
+                  </div>
+                  <script>
+    var AMBASSADOR_API_KEY = '14b97833677c00dc005c33cab1baac8d';
+</script>
+
+<style>
+    .embedded-ambassador-form {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Tahoma', sans-serif;
+    }
+    .embedded-ambassador-form h2 {
+        color: #333;
+        text-align: center;
+    }
+    .embedded-ambassador-form .form-control {
+        padding: 6px 12px;
+        border: 1px solid #c4cdd5;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 3px;
+        font-weight: 300;
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        margin: 0;
+        letter-spacing: 1px;
+        display: block;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+    }
+    .embedded-ambassador-form .form-group {
+        margin-bottom: 15px;
+    }
+    .embedded-ambassador-form .form-group label {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    .embedded-ambassador-form input, .embedded-ambassador-form select, .embedded-ambassador-form textarea {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        outline: 0;
+    }
+    .embedded-ambassador-form input, .embedded-ambassador-form select {
+        height: 32px;
+    }
+    .embedded-ambassador-form textarea {
+        height: auto;
+    }
+    .embedded-ambassador-form input:focus, .embedded-ambassador-form select:focus, .embedded-ambassador-form textarea:focus {
+        border: 2px solid #5c6ac4;
+        box-shadow: none;
+        outline: 0;
+    }
+    .embedded-ambassador-form label small {
+        font-size: 85%;
+        color: #a94442;
+        float: right !important;
+    }
+    .embedded-ambassador-form #error, .embedded-ambassador-form #job-description-error {
+        font-size: 85%;
+        color: #a94442;
+        font-weight: bold;
+    }
+    .embedded-ambassador-form .btn-merchant {
+        outline: 0;
+        min-height: initial;
+        transition: all 0.3s ease-in-out;
+        border-radius: 2px;
+        box-shadow: none;
+        text-shadow: none;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        background: linear-gradient(to bottom, #6371c7, #5563c1);
+        border-color: #3f4eae;
+        color: #ffffff;
+        fill: #ffffff;
+    }
+</style>
+
+<div class="embedded-ambassador-form">
+    <div class="form-group">
+        <label>Email address: <small id="merchant-email-error" style="display: none;">Email address is required.</small></label>
+        <input id="merchant-email" placeholder="Give us your email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Project title: <small id="job-title-error" style="display: none;">Project title is required.</small></label>
+        <input id="job-title" placeholder="Give your project request a title..." class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Project category: <small id="job-category-error" style="display: none;">Category is required.</small></label>
+        <select id="job-category" class="form-control">
+            <option value="" selected="selected">Select a category</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Project description: - <a href="https://blog.storetasker.com/2017/02/11/7-tips-for-submitting-shopify-job-requests-that-experts-love/" target="_blank">Click here</a> for tips on submitting a great project brief.</label>
+        <p id="job-description-error" style="display: none;">Project description is required.</p>
+        <textarea id="job-description" placeholder="Describe your Shopify project request here. Be very clear and descriptive for a fast and accurate estimate." class="form-control" rows="8"></textarea>
+    </div>
+
+    <div id="error" style="display: none;"></div>
+
+    <button id="job-submit" class="btn-merchant" onclick="postJob()">Post Project Request</button>
+</div>
+
+<script>
+    var postJob;
+    (function() {
+        function getAjax(url, success, error) {
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+            xhr.open('GET', url);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState>3 && xhr.status==200) {
+                    success(JSON.parse(xhr.responseText));
+                }
+            };
+            xhr.onerror = function() {
+                error(JSON.parse(xhr.responseText));
+            };
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send();
+            return xhr;
+        }
+        function postAjax(url, data, success, error) {
+            var params = typeof data == 'string' ? data : Object.keys(data).map(
+                function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
+            ).join('&');
+
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.open('POST', url);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState>3 && xhr.status==200) {
+                    success(JSON.parse(xhr.responseText));
+                }
+                else if(xhr.readyState>3 && xhr.status==400) {
+                    error(JSON.parse(xhr.responseText));
+                }
+            };
+            xhr.onerror = function() {
+                error(JSON.parse(xhr.responseText));
+            };
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send(params);
+            return xhr;
+        }
+        function checkFields(fieldData) {
+            var fields = [
+                'merchant-email',
+                'job-title',
+                'job-category',
+                'job-description'
+            ];
+            var hasError = false;
+            for(var iField in fields) {
+                var field = fields[iField];
+                var errorEle = document.getElementById(field + '-error');
+                errorEle.style.display = 'none';
+                if(!fieldData[field]) {
+                    errorEle.style.display = 'block';
+                    hasError = true;
+                }
+            }
+            return !hasError;
+        }
+
+        postJob = function() {
+            var merchantEmail = document.getElementById('merchant-email').value;
+            var title         = document.getElementById('job-title').value;
+            var categoryId    = document.getElementById('job-category').value;
+            var description   = document.getElementById('job-description').value;
+
+            var fieldData = {
+                'merchant-email':  merchantEmail,
+                'job-title':       title,
+                'job-category':    categoryId,
+                'job-description': description
+            };
+            if(!checkFields(fieldData)) return;
+
+            var data = {
+                jobTitle: title,
+                jobCategory: categoryId,
+                jobDescription: description,
+                merchantEmail: merchantEmail,
+                ambassadorApiKey: AMBASSADOR_API_KEY
+            };
+
+            var generalErrorEle = document.getElementById('error');
+            generalErrorEle.style.display = 'none';
+
+            postAjax('https://app.storetasker.com/api/v1/marketing/ambassadors/jobs/embedded', data, function(res) {
+                if(!res.token) {
+                    generalErrorEle.style.display = 'block';
+                    generalErrorEle.innerHTML = '<p>Unable to post job...</p>';
+                }
+                window.location.href = 'https://app.storetasker.com?absr_token=' + res.token + '&rfsn=' + res.rfsn;
+            }, function(err) {
+                var errorMessage = '';
+                if(err.fields) {
+                    for(var iError in err.fields) {
+                        var error = err.fields[iError][0];
+                        errorMessage += '<p>' + error + '</p>';
+                    }
+                }
+                else {
+                    errorMessage = '<p>' + err.message + '</p>';
+                }
+                generalErrorEle.style.display = 'block';
+                generalErrorEle.innerHTML = errorMessage;
+            });
+        }
+
+
+        // load project categories
+        getAjax('https://app.storetasker.com/api/v1/marketing/job-categories', function(res) {
+            var optionsHTML = '<option value="" selected="selected">Select a Category</option>' + "\r\n";
+            for(var iCategory in res) {
+                var category = res[iCategory];
+                optionsHTML += '<option value="' + category.id + '">' + category.display_name + '</option>' + "\r\n";
+            }
+            var catEle = document.getElementById('job-category');
+            catEle.innerHTML = optionsHTML;
+        }, function(err) {
+            var generalErrorEle = document.getElementById('error');
+            generalErrorEle.style.display = 'block';
+            generalErrorEle.innerHTML = '<p>Unable to load categories.</p>';
+        });
+    })();
+</script>
+
+              </li>
+            </ul>
+    
+
+  {{chat}}
+</div>
+
+<div class="container clear"></div>
